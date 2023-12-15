@@ -14,5 +14,14 @@
 		"railo": {"minimum_version":"", "notes":"", "docs":"http://railodocs.org/index.cfm/function/getcomponentmetadata"},
 		"openbd": {"minimum_version":"", "notes":"", "docs":"http://openbd.org/manual/?/function/getcomponentmetadata"}
 	},
-	"links": []
+	"links": [],
+	"examples": [
+		{
+			"title": "Display metadata for the web root Application.cfc",
+			"description": "This code returns a struct representation of the Application.cfc file in the web root.",
+			"code": "writeDump( getComponentMetadata('Application') );",
+			"result": "A struct with keys related to the CFC's metadata",
+			"runnable": true
+		}
+	]
 }
